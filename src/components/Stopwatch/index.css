@@ -1,0 +1,133 @@
+/* Write CSS here */
+.app-container {
+  display: flex;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .app-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  }
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .content-container {
+    margin-top: 150px;
+    margin-left: 150px;
+    align-items: flex-start;
+    max-width: 300px;
+  }
+}
+
+.app-heading {
+  color: #333333;
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .app-heading {
+    font-size: 56px;
+  }
+}
+
+.stop-watch-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid;
+  border-radius: 15px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  background-color: #ffffff;
+  padding: 50px 30px 30px 30px;
+  width: 100%;
+}
+
+.timer-heading-sec {
+  display: flex;
+  align-items: center;
+}
+
+.timer-img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.timer-title {
+  color: #333333;
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0px 0px 0px 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-title {
+    font-size: 18px;
+  }
+}
+
+.timer-count {
+  color: #333333;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-count {
+    font-size: 48px;
+  }
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 16px;
+  border-width: 0px;
+  border-radius: 8px;
+  padding: 10px 16px 10px 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.start {
+  background-color: #1db05f;
+}
+
+.stop {
+  background-color: #ef0d36;
+}
+
+.reset {
+  background-color: #eaa800;
+}
